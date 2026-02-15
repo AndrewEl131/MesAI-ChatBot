@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Radio_Canada_Big, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Configure Radio Canada Big (Sans-serif)
+const radioCanada = Radio_Canada_Big({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-radio-canada",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Configure Source Serif 4 (Serif)
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-source-serif",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${radioCanada.variable} ${sourceSerif.variable} antialiased`}
       >
         {children}
       </body>
