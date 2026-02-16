@@ -1,11 +1,12 @@
 import Image from "next/image";
 import SplineScene from "./SplineScene";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="w-full h-screen">
       <div className="w-[70vw] h-full flex flex-col items-center">
-        <div className="text-center h-100 flex flex-col mt-[100px]">
+        <div className="text-center h-100 flex flex-col gap-5 mt-25">
           {/* Glow effect using drop-shadow */}
           <h1 className="font-sans text-8xl font-bold text-white drop-shadow-[0_15px_15px_rgba(255,255,255,0.3)]">
             Welcome to MesAi
@@ -18,13 +19,15 @@ export default function Home() {
         </div>
 
         <div>
-          <button className="btn cursor-pointer">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Neon button
-          </button>
+          <Link href={"/chat"}>
+            <button className="btn cursor-pointer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Neon button
+            </button>
+          </Link>
         </div>
       </div>
       <SplineScene />
