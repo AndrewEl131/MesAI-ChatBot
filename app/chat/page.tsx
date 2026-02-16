@@ -6,7 +6,7 @@ export default function chatPage() {
   return (
     <main className="w-full h-screen">
       {/* head */}
-      <div className="w-full h-14 flex justify-between items-center">
+      <div className="w-full h-13 flex justify-between items-center">
         <div className="w-15.5 h-15.5 relative">
           <Image fill src={"/assets/MesAI.png"} alt="logo" />
         </div>
