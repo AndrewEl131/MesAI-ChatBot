@@ -25,7 +25,7 @@ export default function Home() {
               <span></span>
               <span></span>
               <span></span>
-              Neon button
+              Get Started
             </button>
           </Link>
         </div>
